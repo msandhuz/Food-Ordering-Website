@@ -1,0 +1,114 @@
+.table {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  overflow-x: auto;
+  table-layout: fixed;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.19); /* Adds shadow for 3D effect */
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Specific alignment for Team Name column */
+.table th:nth-child(2), .table td:nth-child(2) {
+  text-align: left;
+}
+
+.table th {
+  background-color: #f0f0f0;
+  color: blue;
+  font-weight: bold;
+  border-bottom: 3px solid #DAA520;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* Subtle shadow below headers for depth */
+}
+
+/* Enhances interactivity with hover effects */
+.table tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Zebra Striping for rows */
+.table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.table tr:nth-child(even) {
+  background-color: #ebf1f5;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+  .table {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .table th, .table td {
+    padding: 8px;
+  }
+}
+
+/* Styles for avatar images */
+.table .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.leaderboard-container.loading {
+  opacity: 0.5;  
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #333;
+}
+
+h1, button {
+  text-align: center; /* Center the text for these elements */
+  margin: 10px 0; /* Consistent margin for spacing */
+}
