@@ -1,52 +1,52 @@
 .table {
-  max-width: 100%;
+  max-width: 95%; /* Slightly reduced width for better alignment */
   width: auto;
   height: auto;
   margin: 20px auto;
   border-collapse: collapse;
-  background-color: #f8f9fa;
-  color: #333;
-  font-family: 'Arial', sans-serif;
+  background-color: #e6e6e6; /* Light grey background */
+  color: #222; /* Darker text for better contrast */
+  font-family: 'Helvetica Neue', sans-serif; /* Updated font style */
   overflow-x: auto;
   table-layout: fixed;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.19); /* Adds shadow for 3D effect */
+  font-weight: bold; /* Less emphasis on font weight */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 4px 12px rgba(0,0,0,0.23); /* Adjusted shadow for subtlety */
 }
 
 .table th, .table td {
-  padding: 12px;
+  padding: 14px; /* Increased padding for better spacing */
   text-align: center;
   vertical-align: middle;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ddd; /* Lighter and thicker border */
 }
 
-/* Specific alignment for Team Name column */
+/* Alignment for the Team Name column */
 .table th:nth-child(2), .table td:nth-child(2) {
   text-align: left;
 }
 
 .table th {
-  background-color: #f0f0f0;
-  color: blue;
+  background-color: #d9d9d9; /* Lighter header background */
+  color: #0056b3; /* Changed to a soft blue */
   font-weight: bold;
-  border-bottom: 3px solid #DAA520;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* Subtle shadow below headers for depth */
+  border-bottom: 2px solid #b3b3b3; /* Matching border to header */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12); /* More subtle shadow */
 }
 
-/* Enhances interactivity with hover effects */
+/* Hover effects for interactivity */
 .table tr:hover {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2; /* Softer hover effect */
 }
 
-/* Zebra Striping for rows */
+/* Zebra Striping for readability */
 .table tr:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #fcfcfc; /* Slightly off-white for odd rows */
 }
 .table tr:nth-child(even) {
-  background-color: #ebf1f5;
+  background-color: #f0f0f0; /* Light gray for even rows */
 }
 
-/* Media Queries for Responsive Adjustments */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .table {
     width: 100%;
@@ -54,39 +54,44 @@
   }
 
   .table th, .table td {
-    padding: 8px;
+    padding: 10px; /* Adjusted padding for smaller screens */
   }
 }
 
-/* Styles for avatar images */
+/* Styles for avatar images within the table */
 .table .avatar {
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Reduced size for better layout */
+  height: 40px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 5px; /* Less spacing */
   vertical-align: middle;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 8px 15px;
+  font-size: 14px;
   cursor: pointer;
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 5px;
-  margin: 10px 0;
+  border-radius: 4px;
+  margin: 10px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+  display: inline-block;
 }
 
 button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .leaderboard-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 95%; /* Matched with table width */
   transition: opacity 1s ease-in-out;
 }
 
@@ -100,15 +105,16 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9); /* More opacity for visibility */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  color: #333;
+  color: #222; /* Darker font color for contrast */
 }
 
 h1, button {
-  text-align: center; /* Center the text for these elements */
-  margin: 10px 0; /* Consistent margin for spacing */
+  text-align: center;
+  margin: 10px 0;
 }
+

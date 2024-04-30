@@ -53,7 +53,6 @@ function Leaderboard() {
     return (
         <div className={`leaderboard-container ${loading ? 'loading' : ''}`}>
             <h1>Leaderboard</h1>
-            <button onClick={loadTeams}>Update Scores</button>
             {loading ? (
                 <div className="loading-overlay">Updating Scores</div>  // Stylish loading indicator
             ) : (
@@ -87,6 +86,7 @@ function Leaderboard() {
                     </tbody>
                 </table>
             )}
+            <button onClick={loadTeams}>Update Scores</button>
         </div>
     );
 }
