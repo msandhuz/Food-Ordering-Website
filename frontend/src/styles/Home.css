@@ -1,0 +1,61 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2E8B57; /* Solid green background */
+    color: white; /* White text for readability */
+    margin-top: 60px;
+}
+
+.content {
+    display: flex;
+    width: 100%; /* Adjust to fill the viewport width */
+    max-width: 1200px; /* Maximum content width */
+    align-items: center;
+    justify-content: space-evenly; /* Evenly space the children */
+    padding: 20px; /* Add padding for spacing around the edges */
+}
+
+.text-section {
+    flex: 1; /* Allocate equal space to text section */
+    padding-right: 50px; /* Increase right padding for more spacing from the image */
+    font-size: 2.0em; /* Larger text */
+    max-width: 50%; /* Limit width to balance text readability */
+}
+
+.image-section {
+    flex: 1;
+    position: relative;
+    width: auto; /* Ensure width is automatically adjusted */
+    height: 60vh; /* Use a relative height based on the viewport */
+    overflow: hidden; /* Ensures images don't exceed the container size */
+}
+
+.image-section img {
+    position: absolute;
+    top: 0;
+    right: 0; /* Align the image to the right inside its container */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Rounded borders for images */
+    object-fit: cover; /* Ensures images cover the area without distorting aspect ratio */
+    transition: opacity 5s ease-in-out; /* Smooth transition for image fade */
+    opacity: 0; /* Start with image transparent before it fades in */
+}
+
+button {
+    padding: 12px 24px; /* Slightly larger padding for a bigger button */
+    background-color: #022202; /* Darker green */
+    border: 2px solid white; /* Add white border for contrast */
+    border-radius: 10px; /* Rounded edges for aesthetic appeal */
+    font-size: 20px; /* Larger font size for button text */
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px; /* Space from the text */
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}

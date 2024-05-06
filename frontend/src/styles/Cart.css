@@ -1,0 +1,82 @@
+/* Cart container styles */
+.cart-container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 20px;
+  padding-top: 70px; /* Additional top padding to account for the fixed navbar */
+  background: #e8f5e9; /* Soft green background for a refreshing look */
+  box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  border-radius: 10px;
+  color: #2E8B57; /* Dark green text color for contrast */
+  margin-top: 60px; /* Ensures the container starts below the navbar */
+  
+}
+
+/* Table styling within the cart */
+.cart-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  
+}
+
+.cart-table th, .cart-table td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #c8e6c9; /* Soft green lines for a clean separation */
+
+}
+
+.cart-table th {
+  background-color: #81c784; /* Medium green for header cells */
+  color: #1b5e20; /* Dark green text for readability */
+  
+}
+
+/* Styling for buttons and links styled as buttons in cart actions */
+.cart-actions button, .cart-actions .addToCartBtn, .button-group button {
+  border: 2px solid #4caf50; /* Green border for definition */
+  padding: 8px 16px; /* Suitable padding for the button */
+  background: #66bb6a; /* Light green background */
+  color: #fff; /* White text for contrast */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  font-size: 18px; /* Larger font size for ease of reading */
+  cursor: pointer; /* Indicates interactive element */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  font-weight: bold; /* Bold text for emphasis */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Ensure it respects padding and margins */
+}
+
+/* Hover effects for buttons to provide visual feedback */
+.cart-actions button:hover, .cart-actions .addToCartBtn:hover, .button-group button:hover {
+  background-color: #4caf50; /* Darker green on hover for visual impact */
+  box-shadow: 0 6px 12px rgba(165, 172, 165, 0.3); /* Enhanced shadow for a 3D effect */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Display for the subtotal amount */
+.subtotal-display {
+  font-size: 20px; /* Large font size for emphasis */
+  font-weight: bold; /* Bold text for clarity */
+  color: #2E8B57; /* Dark green text to maintain theme */
+  margin-top: 15px; /* Space above the subtotal display */
+}
+
+/* Remove button specific styles */
+.remove-btn {
+  padding: 8px 16px; /* Suitable padding for the button */
+  background-color: #f44336; /* Red color to signify a deletion action */
+  color: white; /* White text for better readability */
+  border: none; /* No border for a cleaner look */
+  border-radius: 10px; /* Rounded edges to match other buttons */
+  cursor: pointer; /* Indicates the element is clickable */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for visual feedback */
+}
+
+.remove-btn:hover {
+  background-color: #d32f2f; /* Darker shade of red on hover for emphasis */
+  transform: translateY(-2px); /* Slight raise to suggest button press */
+  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.2); /* Subtle shadow for depth */
+}

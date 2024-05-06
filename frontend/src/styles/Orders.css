@@ -1,0 +1,59 @@
+.orders-container {
+    padding: 20px;
+    background-color: #e8f5e9; /* Soft green background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2E8B57; /* Dark green text */
+    margin-top: 60px; /* Ensure sufficient spacing from the top */
+    font-family: Arial, sans-serif; /* Improving font consistency across browsers */
+}
+
+.orders-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for modern look */
+    overflow: hidden; /* Keeps the child elements within the table boundary */
+}
+
+.orders-table th, 
+.orders-table td {
+    border: 1px solid #c8e6c9; /* Light green for borders */
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 16px; /* Ensuring readability with adequate font size */
+}
+
+.orders-table th {
+    background-color: #81c784; /* Medium green for headers */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Emphasizing header text */
+}
+
+.orders-table tr:nth-child(even) {
+    background-color: #e8f5e9; /* Alternate row background for better readability */
+}
+
+.orders-table tr:hover {
+    background-color: #c8e6c9; /* Light green on hover for interactivity */
+    transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.orders-back-home-btn {
+    padding: 8px 16px;
+    background-color: #4caf50; /* Vivid pastel green */
+    color: white; /* High contrast for readability */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor indication for interactivity */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-weight: bold; /* Making button text stand out */
+    margin-top: 20px; /* Additional spacing */
+}
+
+.orders-back-home-btn:hover {
+    background-color: #388e3c; /* Slightly darker green on hover for feedback */
+}

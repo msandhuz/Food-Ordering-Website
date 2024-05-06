@@ -1,0 +1,15 @@
+/* src/components/Footer.css */
+footer {
+    background-color: #1b5c37;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures footer stays above other content */
+}
+
+body {
+    padding-bottom: 0px; /* Extra space at the bottom to avoid content being hidden by the footer */
+}

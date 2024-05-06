@@ -1,0 +1,57 @@
+.menu-items-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Standardizing font family */
+    margin-top: 60px;
+}
+
+.menu-items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.menu-item-card {
+    border: 1px solid #c8e6c9; /* Soft green border */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    background-color: #e8f5e9; /* Soft green background */
+    color: #2E8B57; /* Dark green text */
+}
+
+.menu-item-card img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button-group button {
+    padding: 8px 16px;
+    background-color: #4caf50; /* Vivid pastel green */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #388e3c; /* Slightly darker green on hover */
+}

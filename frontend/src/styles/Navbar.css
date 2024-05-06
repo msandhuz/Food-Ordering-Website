@@ -1,0 +1,59 @@
+/* src/components/Navbar.css */
+nav {
+    background: #1b5c37; /* Dark green background for the navbar */
+    color: #fff; /* White text color for contrast */
+    padding: 10px 20px; /* Padding around the elements inside the navbar */
+    display: flex; /* Flexbox to align items horizontally */
+    justify-content: space-between; /* Distribute space between logo and navigation menu */
+    align-items: center; /* Vertically center the items in the navbar */
+    position: fixed; /* Fix navbar at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure navbar stays on top of other content */
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo-and-title .navbar-title {
+    margin-left: 10px; /* Space between logo and title */
+    font-size: 1.5em; /* Larger font size for visibility */
+}
+
+nav .logo img {
+    width: 60px; /* Adjusted to a smaller size */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Indicates the logo is clickable */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 8px 15px; /* Increased padding around text for better appearance and clickability */
+    border-radius: 20px; /* Rounded corners for a more modern look */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for hover effects */
+    display: inline-block; /* Ensures padding and border-radius are applied correctly */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #4CAF50; /* Lighter green on hover/focus for feedback */
+    transform: scale(1.1); /* Slight scale on hover for a dynamic effect */
+    color: #000; /* Change text color on hover/focus for contrast */
+    outline: none; /* Remove outline to maintain style */
+}
